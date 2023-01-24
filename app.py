@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 # buat title
-st.write('### Tokopedia sentiment analysis')
+st.write('# Tokopedia sentiment analysis')
 
 # input dataframe 
 df = pd.read_csv('tokopedia_sentiment_analysis_clean.csv').reset_index(drop=True)
@@ -22,8 +22,9 @@ sns.countplot(x=df['sentiment'], data=df)
 
 col_1, col_2 = st.columns(2)
 
+st.write('## Percentage of Sentiment')
 with col_1:
     st.pyplot(fig)
-   
+st.write('## Count of Sentiment')   
 with col_2:
     st.pyplot(fig2)
