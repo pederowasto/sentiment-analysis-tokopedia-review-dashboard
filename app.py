@@ -23,7 +23,8 @@ with col_1:
     st.pyplot(fig)
    
 with col_2:
-    sns.barplot(df['sentiment'].value_counts().index,df['sentiment'].value_counts())
+    fi2 = sns.barplot(df['sentiment'].value_counts().index,df['sentiment'].value_counts())
     plt.title(f'Distribution Sentiment')
     plt.xlabel('Labels')
     plt.ylabel('Freq')
+    st.pyplot(fig2)
