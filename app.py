@@ -27,4 +27,5 @@ with col_2:
     plt.title(f'Distribution Sentiment')
     plt.xlabel('Labels')
     plt.ylabel('Freq')
+    fig2.savefig('file.png')
     st.pyplot(fig2)
