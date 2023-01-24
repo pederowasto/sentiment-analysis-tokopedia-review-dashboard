@@ -1,7 +1,6 @@
-pip install matplotlib
+from matplotlib import pyplot as plt
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
 # buat title
