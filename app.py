@@ -8,7 +8,7 @@ st.write('### Tokopedia sentiment analysis')
 
 # input dataframe 
 df = pd.read_csv('tokopedia_sentiment_analysis_clean.csv').reset_index(drop=True)
-st.dataframe(df,use_container_width=True)
+st.dataframe(df)
 
 fig, ax = plt.subplots(figsize = (2, 2))
 sizes = [count for count in df['sentiment'].value_counts()]
