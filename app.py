@@ -1,8 +1,14 @@
+from PIL import Image
 from matplotlib import pyplot as plt
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import seaborn as sns
+
+
+image = Image.open('image.jpg')
+st.image(image, use_column_width ='always',caption='Welcome to my app')
+
 # buat title
 st.write('# Tokopedia sentiment analysis')
 
