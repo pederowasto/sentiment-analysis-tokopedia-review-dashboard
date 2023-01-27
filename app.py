@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 
-
 # buat title
 st.write('# Tokopedia sentiment analysis')
 
